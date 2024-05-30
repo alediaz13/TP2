@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.user {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.task {
+    margin-left: 20px;
+    padding: 5px;
+    border: 1px solid #eee;
+}
+
+.task.completed {
+    background-color: #d4edda;
+}
+
+.task.not-completed {
+    background-color: #f8d7da;
+}
