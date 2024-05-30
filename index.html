@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio7</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Validación</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="cuadro">
-        <h2>Formulario de Validacion</h2>
-        <form id="Formulario">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required maxlength="50"><br><br>
-            <label for="apellido">Apellido:</label>
-            <input type="number" name="edad" id="edad" required min="0"><br><br>
-            <label for="altura">Altura (cm):</label>
-            <input type="number" id="altura" name="altura" required min="0" max="230"><br><br>
-            <label for="email">Correo Electronico:</label>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <button type="boton" onclick="ValidarFormulario()">Enviar</button>
-        </form>
-        <p id="Resultado"></p>
-    </div>
-
+  <div class="container">
+    <h2>Formulario de Validación</h2>
+    <form id="formulario">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required maxlength="50"><br><br>
+      
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required maxlength="50"><br><br>
+      
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" required min="0"><br><br>
+      
+      <label for="altura">Altura (cm):</label>
+      <input type="number" id="altura" name="altura" required min="0" max="230"><br><br>
+      
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <button type="button" onclick="validarFormulario()">Enviar</button>
+    </form>
     
-    
+    <p id="resultado"></p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
