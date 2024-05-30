@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio7</title>
 </head>
 <body>
+    <div class="cuadro">
+        <h2>Formulario de Validacion</h2>
+        <form id="Formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required maxlength="50"><br><br>
+            <label for="apellido">Apellido:</label>
+            <input type="number" name="edad" id="edad" required min="0"><br><br>
+            <label for="altura">Altura (cm):</label>
+            <input type="number" id="altura" name="altura" required min="0" max="230"><br><br>
+            <label for="email">Correo Electronico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <button type="boton" onclick="ValidarFormulario()">Enviar</button>
+        </form>
+        <p id="Resultado"></p>
+    </div>
+
+    
     
 </body>
 </html>
